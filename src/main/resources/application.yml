@@ -4,4 +4,14 @@ spring:
       host=localhost
       database=StudentDB
       port=27017
-      uri=mongodb://localhost:27017/StudentDB
+      uri=mongodb://localhost:27017/StudentCollection
+  jpa:
+    show-sql=true
+    open-in-view=true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+    groups-order: DESC
+    operationsSorter: method
+    disable-swagger-default-url: true
