@@ -1,13 +1,20 @@
 spring:
   data:
     mongodb:
-      host=localhost
-      database=StudentDB
-      port=27017
-      uri=mongodb://localhost:27017/StudentCollection
+      host: localhost
+      database: StudentDB
+      port: 27017
   jpa:
-    show-sql=true
-    open-in-view=true
+    show-sql: true
+    open-in-view: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
